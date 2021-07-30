@@ -3,15 +3,16 @@ package crudoperation.demo.service;
 
 import java.util.List;
 
+
 import crudoperation.demo.model.Employee;
 
 
-public interface employeeservice {
-	
-	
+public interface EmployeeService {
 	Employee saveEmployee(Employee employee);
 	List<Employee> getAllEmployees();
 	Employee getEmployeeById(long id);
 	Employee updateEmployee(Employee employee, long id);
 	void deleteEmployee(long id);
 }
+
+
