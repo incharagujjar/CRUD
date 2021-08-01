@@ -30,13 +30,19 @@ public class Employee {
 	
 	@Column(name = "email")
 	private String email;
+	
+	@Column(name = "password")
+	private String password;
+	
+	
 
-	public Employee(long id, String firstName, String lastName, String email) {
+	public Employee(long id, String firstName, String lastName, String email, String password) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.password = password;
 	}
 
 	public long getId() {
@@ -71,6 +77,13 @@ public class Employee {
 		this.email = email;
 	}
 
+	public String getpassword() {
+		return password;
+	}
+
+	public void setpassword(String password) {
+		this.password = password;
+	}
 
 }
 
